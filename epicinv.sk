@@ -1,0 +1,26 @@
+#==========================#
+#     Made by planemaker1
+#    discord.gg/u7jbzy82GD
+# Please dont steal the Skript
+#==========================#
+options:
+	prefix: &cEpic Inv &f»
+	noperm: &cYou can't do that!
+
+command /endsee <player>:
+	aliases: /endersee, /esee, /enderchestsee
+	usage: &c/endsee <player>
+	permission: endsee.use
+	permission message: {@noperm}
+	trigger:
+		open the arg-1's ender chest to the player
+		send "{@prefix} opened %arg-1%'s Enderchest"
+
+command /invsee <player>:
+	aliases: /inventorysee, /isee
+	usage: &c/invsee <player>
+	permission: invsee.use
+	permission message: {@noperm}
+	trigger:
+		open the arg-1's inventory to the player
+		send "{@prefix} opened %arg-1%'s Inventory"
